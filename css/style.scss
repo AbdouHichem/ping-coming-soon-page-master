@@ -5,21 +5,154 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100hv;
+    min-height: 100vh;
 }
-main{
+
+main {
     width: 85%;
-    max-width: 380px;
-    
+    max-width: 680px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2em 0em;
+    transition: all 0.5s ease;
+
+    .logo {
+        width: 40%;
+        max-width: 120px;
+        margin-bottom: 2em;
+    }
+
+    h1 {
+        color: $Gray;
+        font-weight: normal;
+    }
+
+    span {
+        font-weight: bold;
+        color: $VeryDarkBlue;
+    }
+
+    p {
+        margin: 1.5em 0em;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+
+    }
+
+    input {
+        border-radius: 5em;
+        width: 100%;
+        border: none;
+        padding: 1em 3em;
+        margin: 0.5em 0em;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input[type=email] {
+        border: solid 1px $PaleBlue;
+
+        &::placeholder {
+            color: $PaleBlue;
+        }
+    }
+
+    input[type=button] {
+        color: white;
+        background-color: $Blue;
+        transition: all 2ms ease-in-out;
+        &:hover{
+            cursor: pointer;
+        }
+        &:active {
+            cursor: pointer;
+            background-color: $Blue2;
+        }
+    }
+
+    .illustration {
+        width: 100%;
+        margin: 7em 0em;
+    }
+
+    .social-icons {
+
+        .icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+
+        }
+
+        i {
+            color: $Blue;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        span {
+            border-radius: 5em;
+            border: solid 1px $PaleBlue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+
+            &:hover {
+                border: solid 1px $Blue;
+                background-color: $Blue;
+
+            }
+        }
+
+        p {
+            color: $Gray;
+        }
+    }
 }
-img{
-    width: 100%;
-}
+
+
+
+
 .attribution {
-    font-size: 11px;
+    font-size: 14px;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 728px) {
+    main form {
+       
+        flex-direction: row;
+    transition: all 0.5s ease-in-out;
+        input[type=email] {
+            flex: 3;
+            margin-right: 2em;
+            font-size: 1em;
+        }
+        input[type=button]{
+            flex: 1;
+        }
+
+    }
+
+
 }

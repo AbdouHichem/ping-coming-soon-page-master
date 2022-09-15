@@ -21,24 +21,197 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100hv;
+  min-height: 100vh;
 }
 
 main {
   width: 85%;
-  max-width: 380px;
+  max-width: 680px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2em 0em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-img {
+main .logo {
+  width: 40%;
+  max-width: 120px;
+  margin-bottom: 2em;
+}
+
+main h1 {
+  color: #969696;
+  font-weight: normal;
+}
+
+main span {
+  font-weight: bold;
+  color: #151f29;
+}
+
+main p {
+  margin: 1.5em 0em;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main input {
+  border-radius: 5em;
   width: 100%;
+  border: none;
+  padding: 1em 3em;
+  margin: 0.5em 0em;
+}
+
+main input:focus {
+  outline: none;
+}
+
+main input[type=email] {
+  border: solid 1px #c2d3ff;
+}
+
+main input[type=email]::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+main input[type=email]:-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+main input[type=email]::-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+main input[type=email]::placeholder {
+  color: #c2d3ff;
+}
+
+main input[type=button] {
+  color: white;
+  background-color: #4f7df3;
+  -webkit-transition: all 2ms ease-in-out;
+  transition: all 2ms ease-in-out;
+}
+
+main input[type=button]:hover {
+  cursor: pointer;
+}
+
+main input[type=button]:active {
+  cursor: pointer;
+  background-color: #7f9ff0;
+}
+
+main .illustration {
+  width: 100%;
+  margin: 7em 0em;
+}
+
+main .social-icons .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .social-icons i {
+  color: #4f7df3;
+}
+
+main .social-icons i:hover {
+  color: white;
+}
+
+main .social-icons span {
+  border-radius: 5em;
+  border: solid 1px #c2d3ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+main .social-icons span:hover {
+  border: solid 1px #4f7df3;
+  background-color: #4f7df3;
+}
+
+main .social-icons p {
+  color: #969696;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media only screen and (min-width: 728px) {
+  main form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  main form input[type=email] {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    margin-right: 2em;
+    font-size: 1em;
+  }
+  main form input[type=button] {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
