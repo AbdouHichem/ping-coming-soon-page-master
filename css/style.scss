@@ -1,5 +1,20 @@
 @import "config";
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100hv;
+}
+main{
+    width: 85%;
+    max-width: 380px;
+    
+}
+img{
+    width: 100%;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
