@@ -81,20 +81,47 @@ main form {
           flex-direction: column;
 }
 
+main form .emailDiv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main form p {
+  margin: 0em;
+  color: red;
+  margin: .5em 3em;
+  font-size: .6em;
+}
+
+main .show {
+  display: inline-block;
+}
+
+main .hide {
+  display: none;
+}
+
 main input {
   border-radius: 5em;
   width: 100%;
   border: none;
-  padding: 1em 3em;
-  margin: 0.5em 0em;
+  padding: 1em 2em;
 }
 
 main input:focus {
   outline: none;
-}
-
-main input[type=email] {
-  border: solid 1px #c2d3ff;
 }
 
 main input[type=email]::-webkit-input-placeholder {
@@ -113,11 +140,20 @@ main input[type=email]::placeholder {
   color: #c2d3ff;
 }
 
+main .active {
+  border: solid 1px #c2d3ff;
+}
+
+main .error {
+  border: solid 1px red;
+}
+
 main input[type=button] {
   color: white;
   background-color: #4f7df3;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
+  margin: 0.5em 0em;
 }
 
 main input[type=button]:hover {
@@ -198,20 +234,30 @@ main .social-icons p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    width: 100%;
   }
-  main form input[type=email] {
+  main form .emailDiv {
     -webkit-box-flex: 3;
         -ms-flex: 3;
             flex: 3;
-    margin-right: 2em;
-    font-size: 1em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 1em;
   }
   main form input[type=button] {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    margin: 0em;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,12 +18,16 @@
     <h1>We are launching <span>soon!</span> </h1>
     <p>Subscribe and get notified</p>
     <form action="submit">
-      <input type="email" placeholder="Enter your email address">
-      <input type="button" value="Notify Me">
+      <div class="emailDiv">
+        <input class="email" type="email" placeholder="Enter your email address">
+        <p class="errorMessage">Please provide a valid email address</p>
+      </div>      
+      <input type="button" class = "btn" value="Notify Me">
     </form>
     <img class ="illustration" src="images/illustration-dashboard.png" alt="illustration dashboard ">
     <div class="social-icons">
       <div class="icons">
+
         <span class="fa-stack fa-1x icon">
           <i class="fab fa-facebook-f fa-stack-1x "></i>
         </span>
@@ -46,6 +50,7 @@
       Coded by <a href="https://github.com/AbdouHichem">BOUZAR Abderrahmane</a>.
     </p>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>

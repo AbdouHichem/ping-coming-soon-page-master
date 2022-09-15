@@ -43,16 +43,37 @@ main {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
+        .emailDiv{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+                 p {
+            margin: 0em;
+            color: red;
+            margin: .5em 3em;
+            font-size: .6em;
+            
+        }
 
+    }
+
+    .show {
+        display: inline-block;
+    }
+
+    .hide {
+        display: none;
     }
 
     input {
         border-radius: 5em;
         width: 100%;
         border: none;
-        padding: 1em 3em;
-        margin: 0.5em 0em;
+        padding: 1em 2em;
+
 
         &:focus {
             outline: none;
@@ -60,20 +81,30 @@ main {
     }
 
     input[type=email] {
-        border: solid 1px $PaleBlue;
 
         &::placeholder {
             color: $PaleBlue;
         }
     }
 
+    .active {
+        border: solid 1px $PaleBlue;
+    }
+
+    .error {
+        border: solid 1px red;
+    }
+
     input[type=button] {
         color: white;
         background-color: $Blue;
         transition: all 2ms ease-in-out;
-        &:hover{
+        margin: 0.5em 0em;
+
+        &:hover {
             cursor: pointer;
         }
+
         &:active {
             cursor: pointer;
             background-color: $Blue2;
@@ -140,16 +171,22 @@ main {
 
 @media only screen and (min-width: 728px) {
     main form {
-       
+
         flex-direction: row;
-    transition: all 0.5s ease-in-out;
-        input[type=email] {
+        align-items: flex-start;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        .emailDiv {
             flex: 3;
-            margin-right: 2em;
-            font-size: 1em;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-right: 1em;
+
         }
-        input[type=button]{
+
+        input[type=button] {
             flex: 1;
+            margin: 0em;
         }
 
     }
