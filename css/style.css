@@ -7,6 +7,32 @@
   font-family: "Libre Franklin";
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100hv;
+}
+
+main {
+  width: 85%;
+  max-width: 380px;
+}
+
+img {
+  width: 100%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
